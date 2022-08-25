@@ -88,12 +88,26 @@
             font-size: 0.9em;
             left: 0px;
         }
-        @media all and (max-width : 425px){
-        center{
-            margin-top: 0px;
-            padding: 10px 0px 10px 0px;
+        @media all and (max-width : 320px){
+            center{
+                margin: 0px;
+                padding: 20px 0px 30px 0px;
+            }
+            .input-div{
+                width:270px;
+                height:270px;
+            }
         }
-
+        @media all and (max-width : 321px) and (max-width : 425px){
+            center{
+                margin-top: 0px;
+                padding: 20px 0px 30px 0px;
+            }
+        }
+        @media all and (max-width : 426px) and (max-width : 768px){
+        center{
+            margin-top: 150px;
+        }
         }
     </style>
 <script src="/stopwatch.js"></script>
