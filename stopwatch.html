@@ -8,6 +8,7 @@
 </head>
 <body>
     <center>
+        <button onclick="countdownPage()">Countdown</button>
         <div class="input-div">
             <div  id="hours">00</div>
             <div> : </div>
@@ -21,7 +22,6 @@
         <button onclick="stopwatchStart()">▶</button>
         <button onclick="stopwatchRPause()">⫼</button>
         <button onclick="stopwatchReload()">↻</button>
-        <button onclick="countdownPage()">Countdown</button>
     </center>
     <style>
         body{
@@ -31,7 +31,6 @@
             max-width: 400px;
             margin: auto;
             color: #242424;
-            /* border: 2px solid red; */
             padding: 95px 0px 95px 0px;
             box-shadow: 2px 2px 20px 2px #747474;
             
@@ -60,6 +59,15 @@
             height: 50px;
             border-radius: 50%;
             font-size: 1.3em;
+        }
+        button:nth-of-type(1){
+            color: #ffffff;
+            background-color: #242424;
+            border: none;
+            width: 85px;
+            height: 25px;
+            border-radius: 30px;
+            font-size: 0.9em;
         }
     </style>
 <script src="/stopwatch.js"></script>
