@@ -15,8 +15,8 @@
             </div>
             <br><br>
             <div id="disp"></div>
-            <button onclick="countdownStart()">Start</button>
-            <button onclick="countdownReload()">Reload</button>
+            <button onclick="countdownStart()">▶</button>
+            <button onclick="countdownReload()">↻</button>
         </center>
     <style>
         body{
@@ -31,8 +31,31 @@
             margin-top: 20px;
         }
         .input-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
             border: 5px solid #242424;
-            
+            max-width: 300px;
+            height: 300px;
+            /* border-radius: 50%; */
+        }
+        input{
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            font-size: 3em;
+            font-weight: 100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri1;
+        }
+        button{
+            color: #ffffff;
+            background-color: #242424;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.3em;
         }
     </style>
     <script src="/coundown.js"></script>
