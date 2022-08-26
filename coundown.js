@@ -33,4 +33,6 @@ const countdownReload = ()=>{
     location.reload()
 }
 
-
+const stopwatchPage = ()=>{
+    window.location.href = "stopwatch.html"
+}
