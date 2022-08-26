@@ -9,9 +9,9 @@ const countdownStart = ()=>{
     setTimeout(countdownStart, 1000);
     if(countdownSec < 1 && countdownMin == 0){
         song.play()
-        setSec.value = ""
-        setMin.value = ""
-        setHrs.value = ""
+        setSec.value = "00"
+        setMin.value = "00"
+        setHrs.value = "00"
     }
     if(countdownSec < 0 && setMin.value > 0){
         setSec.value = "59"
