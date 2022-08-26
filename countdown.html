@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown⏰</title>
+    <title>Countdown ⌛</title>
 </head>
 <body>
-        <center class="input-div">
-            <input type="text" name="" placeholder="Hrs" id="setHrs">
-            <input type="text" name="" placeholder="Min" id="setMin">
-            <input type="text" name="" placeholder="Sec" id="setSec">
+        <center>
+            <div class="input-div">
+                <input type="text" name="" placeholder="Hrs" id="setHrs">
+                <input type="text" name="" placeholder="Min" id="setMin">
+                <input type="text" name="" placeholder="Sec" id="setSec">
+            </div>
             <br><br>
-            <div id="aa"></div>
+            <div id="disp"></div>
             <button onclick="countdownStart()">Start</button>
             <button onclick="countdownReload()">Reload</button>
         </center>
     <style>
-        /* .gen-div{
-            color: red;
-            font-size: 5em;
+        body{
+            background-color: #2424;
+        }
+        center{
+            max-width: 400px;
             margin: auto;
-            max-width: 100px;
-        } */
-        
+            color: #242424;
+            padding: 10px 0px 30px 0px;
+            box-shadow: 2px 2px 20px 2px #747474;
+            margin-top: 20px;
+        }
+        .input-div{
+            border: 5px solid #242424;
+            
+        }
     </style>
     <script src="/coundown.js"></script>
 </body>

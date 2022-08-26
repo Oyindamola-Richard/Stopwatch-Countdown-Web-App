@@ -26,7 +26,7 @@ const countdownStart = ()=>{
         setHrs.value--
     }
     // else if(((countdownHrs == "") || (countdownMin == "") || countdownSec == "")){
-    //     aa.innerHTML= "input digit"
+    //     disp.innerHTML= "input digit"
     // }
 }
 const countdownReload = ()=>{
