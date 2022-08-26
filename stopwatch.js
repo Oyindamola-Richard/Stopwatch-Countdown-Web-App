@@ -15,6 +15,11 @@ const stopwatchStart = ()=>{
     }
 
 }
+
+const stopwatchPause = ()=>{
+    // let pause = clearTimeout(stopwatchPause())
+}
+
 const stopwatchReload = ()=>{
 location.reload()
 }
