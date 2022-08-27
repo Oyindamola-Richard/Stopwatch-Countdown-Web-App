@@ -1,6 +1,6 @@
 const stopwatchStart = ()=>{
     Number(milliSec.innerHTML++)
-    let setTime = setTimeout('stopwatchStart()', '9');
+    let setTime = setTimeout(stopwatchStart, 9);
     if (Number(milliSec.innerHTML) == 100){
         Number(milliSec.innerHTML = 0)
         Number(seconds.innerHTML++)
@@ -17,7 +17,7 @@ const stopwatchStart = ()=>{
 }
 
 const stopwatchPause = ()=>{
-    clearTimeout(setTime);
+    clearTimeout(setTime());
 }
 
 const stopwatchReload = ()=>{
