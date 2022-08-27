@@ -17,7 +17,7 @@ const stopwatchStart = ()=>{
 }
 
 const stopwatchPause = ()=>{
-    clearTimeout(setTime());
+    clearTimeout(setTime);
 }
 
 const stopwatchReload = ()=>{
