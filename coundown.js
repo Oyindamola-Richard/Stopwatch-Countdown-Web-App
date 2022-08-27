@@ -6,12 +6,13 @@ const countdownStart = ()=>{
     let countdownHrs = setHrs.value
     countdownSec--;
     setSec.value = countdownSec
-    setTimeout(countdownStart, 1000);
-    if(countdownSec < 1 && countdownMin == 0){
+    let set = setTimeout(countdownStart, 1000);
+    if(countdownHrs == 0 && countdownMin == 0 && countdownSec == 0 ){
         song.play()
         setSec.value = "00"
         setMin.value = "00"
         setHrs.value = "00"
+        clearTimeout(set)
     }
     if(countdownSec < 0 && setMin.value > 0){
         setSec.value = "59"
@@ -25,7 +26,8 @@ const countdownStart = ()=>{
     if(countdownMin == 0 && countdownHrs > 0){
         setHrs.value--
     }
-    // else if(((countdownHrs == "") || (countdownMin == "") || countdownSec == "")){
+    // else if((countdownHrs == "") || (countdownMin == "") || (countdownSec == "")){
+    //     clearTimeout(set)
     //     disp.innerHTML= "input digit"
     // }
 }
