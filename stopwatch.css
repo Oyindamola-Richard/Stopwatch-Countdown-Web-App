@@ -13,13 +13,13 @@ center{
     border: 5px solid #242424;
     border-bottom: 0px;
     height: 10px;
-    width: 25px;
+    max-width: 25px;
 }
 .top{
     border: 5px solid #242424;
     border-bottom: 0px;
     height: 20px;
-    width: 50px;
+    max-width: 50px;
     margin-bottom: -5px;
 }
 .input-div{
@@ -27,7 +27,7 @@ center{
     justify-content: center;
     align-items: center;
     border: 5px solid #242424;
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     border-radius: 50%;
     font-size: 3em;
@@ -59,7 +59,7 @@ button:nth-of-type(1){
 }
 @media all and (max-width : 320px){
     center{
-        margin: 0px;
+        margin-top: 0px;
         padding: 20px 0px 30px 0px;
     }
     .input-div{
@@ -74,7 +74,7 @@ button:nth-of-type(1){
     }
 }
 @media all and (max-width : 426px) and (max-width : 768px){
-center{
+    center{
     margin-top: 150px;
 }
 }

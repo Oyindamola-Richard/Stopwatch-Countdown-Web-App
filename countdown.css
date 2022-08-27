@@ -13,13 +13,13 @@ center{
     border: 5px solid #242424;
     border-bottom: 0px;
     height: 10px;
-    width: 25px;
+    max-width: 25px;
 }
 .top{
     border: 5px solid #242424;
     border-bottom: 0px;
     height: 20px;
-    width: 50px;
+    max-width: 50px;
     /* border-radius: 50%; */
     margin-bottom: -5px;
 }
@@ -68,4 +68,25 @@ button:nth-of-type(1){
     border-radius: 30px;
     font-size: 0.9em;
     left: 0px;
+}
+@media all and (max-width : 320px){
+    center{
+        margin-top: 0px;
+        padding: 20px 0px 30px 0px;
+    }
+    .input-div{
+        width:270px;
+        height:270px;
+    }
+}
+@media all and (max-width : 321px) and (max-width : 425px){
+    center{
+        margin-top: 0px;
+        padding: 20px 0px 30px 0px;
+    }
+}
+@media all and (max-width : 426px) and (max-width : 768px){
+    center{
+    margin-top: 150px;
+}
 }
