@@ -1,4 +1,4 @@
-const song = new Audio('mixkit-start-match-countdown-1954.wav');
+const song = new Audio('mixkit-warning-alarm-buzzer-991.wav');
 
 const countdownStart = ()=>{
     let countdownSec = setSec.value
