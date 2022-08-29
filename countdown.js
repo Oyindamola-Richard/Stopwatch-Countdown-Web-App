@@ -1,4 +1,4 @@
-const song = new Audio('Fireboy-DML-Sofri-(JustNaija.com).mp3');
+const song = new Audio('mixkit-start-match-countdown-1954.wav');
 
 const countdownStart = ()=>{
     let countdownSec = setSec.value
