@@ -6,7 +6,7 @@ const countdownStart = ()=>{
     let countdownHrs = setHrs.value
     countdownSec--;
     setSec.value = countdownSec
-    let set = setTimeout(countdownStart, 1000);
+    set = setTimeout(countdownStart, 1000);
     if(countdownHrs == 0 && countdownMin == 0 && countdownSec == 0 ){
         song.play()
         setSec.value = "00"
@@ -32,7 +32,10 @@ const countdownStart = ()=>{
     // }
 }
 const countdownReload = ()=>{
-    location.reload()
+    clearTimeout(set)
+    setSec.value = "";
+    setMin.value = "";
+    setHrs.value = ""
 }
 
 const stopwatchPage = ()=>{

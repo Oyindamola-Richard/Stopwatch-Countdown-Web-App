@@ -1,6 +1,6 @@
 const stopwatchStart = ()=>{
     Number(milliSec.innerHTML++)
-    let setTime = setTimeout(stopwatchStart, 9);
+    setTime = setTimeout(stopwatchStart, 9);
     if (Number(milliSec.innerHTML) == 100){
         Number(milliSec.innerHTML = 0)
         Number(seconds.innerHTML++)
@@ -21,7 +21,11 @@ const stopwatchPause = ()=>{
 }
 
 const stopwatchReload = ()=>{
-location.reload()
+    clearTimeout(setTime);
+    milliSec.innerHTML = "00";
+    seconds.innerHTML = "00";
+    minutes.innerHTML = "00";
+    hours.innerHTML = "00"
 }
 
 const countdownPage = ()=>{
