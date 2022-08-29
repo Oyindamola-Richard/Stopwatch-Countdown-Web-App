@@ -20,7 +20,6 @@ center{
     border-bottom: 0px;
     height: 20px;
     max-width: 50px;
-    /* border-radius: 50%; */
     margin-bottom: -5px;
 }
 .input-div{
@@ -31,9 +30,6 @@ center{
     border: 5px solid #242424;
     max-width: 300px;
     height: 300px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-
 }
 input{
     width: 70px;
